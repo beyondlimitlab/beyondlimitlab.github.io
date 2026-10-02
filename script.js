@@ -1,0 +1,1 @@
+document.querySelector('#year').textContent=new Date().getFullYear();const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('.card');bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.classList.remove('active'));b.classList.add('active');cs.forEach(c=>c.classList.toggle('hide',b.dataset.filter!='all'&&c.dataset.category!=b.dataset.filter))});
